@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management System</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+  <h1>Student Management System</h1>
+
+  <!-- Add student section -->
+  <div class="section">
+    <h2>Add Student</h2>
+    <label for="studentID">Student ID:</label>
+    <input type="text" id="studentID">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName">
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName">
+    <label for="qualification">Qualification:</label>
+    <input type="text" id="qualification">
+    <button onclick="addStudent()">Submit</button>
+  </div>
+
+  <!-- Display student list section -->
+  <div class="section">
+    <h2>Student List</h2>
+    <ul id="studentList"></ul>
+    <button onclick="refreshList()">Refresh</button>
+  </div>
+
+  <!-- Search student section -->
+  <div class="section">
+    <h2>Search Student</h2>
+    <label for="searchID">Student ID:</label>
+    <input type="text" id="searchID">
+    <button onclick="searchStudent()">Search</button>
+    <div id="searchResult"></div>
+  </div>
+
+  <script src="myscript.js"></script>
+  
+</body>
+</html>
